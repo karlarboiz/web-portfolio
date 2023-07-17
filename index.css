@@ -1,0 +1,241 @@
+:root {
+    --customize--primary-color:#6527BE;
+    --customize--secondary-color:#9681EB;
+    --customize--calltoaction-color: #45CFDD;
+    --navbarbrand--font-weight: 900;
+    --navbaritem--font-weight: 300;
+    --navbarbrand--font-size: 1.5rem;
+    --linear-background-color: linear-gradient(to bottom, var(--body-color), #FFFFFF);
+    --body-color: #A7EDE7;
+    --standard--height: 100vh;
+
+  }
+
+  /* start of general modification */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background: var(--linear-background-color);
+}
+
+
+.nav-item a,
+.navbar-brand {
+    padding: .75rem !important;
+    
+}
+
+h1 {
+    font-weight: 800;
+    color: var(--customize--primary-color);  
+}
+
+.nav-item a {
+    font-weight: var(--navbaritem--font-weight);
+}
+.navbar-brand p{
+    font-size: var(--navbarbrand--font-size);
+    font-weight: var(--navbarbrand--font-weight);
+}
+
+
+
+.page-section{
+    min-height: var(--standard--height);
+    height: max-content;
+}
+
+
+/* end of general modification */
+
+/* start of landing page section */
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+#landing-section .phase {
+    max-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;   
+    }
+
+.first--phase {
+    border: 10px dashed var(--customize--primary-color);
+    clip-path: polygon(0 0, 70% 0, 27% 100%, 0 100%);
+    left: 0;
+}
+
+.second--phase {
+    background-color: black;
+    background-image: url('images/main/cardbody.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    clip-path: polygon(70% 0, 100% 0%, 100% 100%, 27% 100%);
+    left: 0;
+}
+
+
+.card--main {
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    max-width: 85%;
+    aspect-ratio: 16/9;
+    height: 15rem;
+    transform: translate(-50%,50%);
+}
+
+.profile--container h4 {
+    color: var(--customize--secondary-color);
+}
+
+.profile--role {
+    color: var(--customize--secondary-color);
+}
+
+.profile--description {
+    color: var(--customize--primary-color);
+}
+
+.profile--role::after {
+    content: "";
+    display: block;
+    max-width: 10rem;
+    min-height: .15rem;
+    background: linear-gradient(to bottom, var(--body-color), var(--customize--secondary-color));
+}
+
+.card--main--body{
+    background: rgba(239, 231, 231, 0.977);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile--pic {
+    width: 85px;
+    height: 85px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+/* end of the landing page */
+
+/* start of projects sections */
+.card-body h5{
+    color: var(--customize--primary-color);
+}
+
+.card-text {
+    color: aliceblue;
+}
+/* end of projects sections */
+
+/* start of tools section */
+
+#tools-navbar {
+    background: linear-gradient(to bottom, var(--body-color), var(--customize--calltoaction-color));
+}
+.scrollspy-example {
+    height: 50vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.card--tool {
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    max-height: 10rem;
+    height: 8.5rem;
+    min-height: 5rem;
+
+}
+
+.card--tool__1{
+    background-image: url('./images/tools/html.png');
+    background-size: contain;
+}
+
+.card--tool__2 {
+    background-image: url('./images/tools/css.jpg');
+    background-size: cover;
+}
+
+.card--tool__3{
+    background-image: url('./images/tools/javascript.png');
+    background-size: contain;
+}
+
+.card--tool__4{
+    background-image: url('./images/tools/bootstrap5.jpeg');
+    background-size: cover;
+}
+
+.card--tool__5,
+.card--tool__8{
+    background-image: url('./images/tools/mongodb.png');
+    background-size: contain;
+}
+
+.card--tool__6,
+.card--tool__11{
+    background-image: url('./images/tools/node.js.jpg');
+    background-size: contain;
+}
+
+.card--tool__7,
+.card--tool__9{
+    background-image: url('./images/tools/expressjs.png');
+    background-size: contain;
+}
+
+.card--tool__10{
+    background-image: url('./images/tools/reactjs.png');
+    background-size: contain;
+}
+
+
+.card-body img{
+    max-width: 5rem;
+    min-height: 5rem;
+    object-fit: cover;
+}
+
+/* end of tools section */
+
+/* start of contact section */
+form {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+form label {
+    color: var(--customize--primary-color);
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-icons i {
+    font-size: 1.5rem;
+    color: var(--customize--primary-color);
+}
+
